@@ -6,14 +6,12 @@ import android.widget.TextView;
 
 public class MainActivity extends WearableActivity {
 
-    private TextView mTextView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTextView = findViewById(R.id.text);
+        TextView mTextView = findViewById(R.id.text);
 
         setAmbientEnabled();
     }
