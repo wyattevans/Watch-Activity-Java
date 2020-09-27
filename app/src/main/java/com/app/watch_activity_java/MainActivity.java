@@ -2,7 +2,6 @@ package com.app.watch_activity_java;
 
 import android.os.Bundle;
 import android.support.wearable.activity.WearableActivity;
-import android.widget.TextView;
 
 public class MainActivity extends WearableActivity {
 
@@ -11,7 +10,7 @@ public class MainActivity extends WearableActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView mTextView = findViewById(R.id.text);
+        findViewById(R.id.text);
 
         setAmbientEnabled();
     }
